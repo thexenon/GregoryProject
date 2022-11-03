@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            app:cardCornerRadius="4dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/thumbnail"/>
+
+            <RelativeLayout
+                android:layout_width="25dp"
+                android:layout_height="15dp"
+                android:layout_margin="5dp">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/colorMoment"
+                    android:layout_centerInParent="true"
+                    app:cardCornerRadius="2dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunito_regular"
+                        android:text="60s"
+                        android:textSize="10sp"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:id="@+id/txt_duration"/>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/ic_play_thumb"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="5dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ANIMATION"
+                    android:textSize="10sp"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/nunito_bold"
+                    android:id="@+id/txt_category"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorMoment"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_ellipse"
+            android:id="@+id/more"
+            android:layout_marginTop="2.5dp"
+            android:layout_marginEnd="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="This is a title for the videos"
+                android:textSize="14sp"
+                android:id="@+id/txt_title"
+                android:textColor="@color/colorMoment"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/roboto_regular"
+                android:text="This is a description "
+                android:layout_marginEnd="5dp"
+                android:id="@+id/txt_description"
+                android:textSize="12sp"
+                android:textColor="@color/colorWhite"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+
+                <include layout="@layout/layout_widget_post"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="13sp"
+                android:text="TODAY"
+                android:id="@+id/txt_date_created"
+                android:textColor="@color/colorGrey"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

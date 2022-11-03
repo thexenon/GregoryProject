@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:layout_centerVertical="true"
+            android:rotation="90"
+            android:layout_marginStart="15dp"
+            android:id="@+id/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:id="@+id/ticket"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toEndOf="@id/ticket"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/colorGrey"
+            android:layout_centerInParent="true"
+            android:id="@+id/date"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_contact_pin"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/user_profile"/>
+
+    </RelativeLayout>
+
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="5dp"
+        android:id="@+id/card_view"
+        android:layout_below="@id/toolbar"
+        android:background="@color/colorBackground">
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/player_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorBackground"
+            app:controller_layout_id="@layout/custom_controller2"
+            app:fastforward_increment="10000"
+            app:hide_on_touch="false"
+            app:player_layout_id="@layout/exo_simple_player_view"
+            app:resize_mode="fit"
+            app:rewind_increment="10000"
+            app:show_timeout="5000"
+            app:use_controller="true" >
+
+
+        </com.google.android.exoplayer2.ui.PlayerView>
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:theme="@style/ProgressBarStyle"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar"/>
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="15dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="REPORT FOR"
+                android:textAllCaps="true"
+                android:layout_marginStart="4dp"
+                android:id="@+id/report_for"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/roboto_bold"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Verified"
+        android:thumbTint="@color/colorMoment"
+        android:trackTint="@color/colorMoment"
+
+        android:id="@+id/switch_button"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        tools:ignore="UnusedAttribute,UseSwitchCompatOrMaterialXml" />
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/areyousur"
+        android:textColor="@color/colorWhite"
+        android:text="Are you sur, you want to sign out ?"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/areyousur"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorMoment"
+        android:text="You will miss us :("
+        android:id="@+id/miss"
+        android:fontFamily="@font/nunito_bold"
+        android:textSize="20sp"/>
+
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="45dp"
+        android:text="Yes :("
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/rounded_button"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/button_sign_out"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/miss"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_arrow"
+        android:rotation="90"
+        android:layout_margin="25dp"
+        android:id="@+id/back_arrow"/>
+
+
+
+
+
+</RelativeLayout>

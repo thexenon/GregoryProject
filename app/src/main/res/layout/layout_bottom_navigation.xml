@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/navBar"
+    android:background="@drawable/background_line_top">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_home"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ic_home"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_home_active"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ic_home_active"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_fire"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ic_popular"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_fire_active"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ic_popular_active"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_video_gallery"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ic_gallery"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_video_gallery_active"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ic_gallery_active"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/ic_notifications"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/notification"/>
+
+
+
+        <RelativeLayout
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/bell_active"
+            android:visibility="gone">
+
+            <include layout="@layout/layout_bell_active"/>
+        </RelativeLayout>
+
+
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:src="@drawable/ic_notification_active"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/ic_notification_active"/>
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_profile"
+            android:layout_gravity="center"
+            android:id="@+id/ic_profile"/>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_profile_active"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:id="@+id/ic_profile_active"/>
+    </LinearLayout>
+
+</RelativeLayout>

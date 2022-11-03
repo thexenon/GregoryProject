@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relLayout1">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:rotation="90"
+            android:id="@+id/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit your video"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/nunito_regular"
+            android:textAllCaps="true"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relLayout1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Title:"
+                android:id="@+id/tit"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="5dp"
+                android:layout_below="@id/tit"
+                android:background="@drawable/rounded_line_description">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/title_video_edit"
+                    android:hint="Add a title"
+                    android:textColorHint="@color/colorGrey"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLength="40"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="0 / 40"
+                    android:id="@+id/stringTitleSize"
+                    android:textColor="@color/colorGrey"
+                    android:layout_margin="5dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relLayout3"
+            android:layout_below="@id/relLayout2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/nunito_regular"
+                android:text="Description:"
+                android:id="@+id/desc"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:layout_margin="5dp"
+                android:layout_below="@id/desc"
+                android:background="@drawable/rounded_line_description">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:id="@+id/description_edit"
+                    android:hint="Describe your video"
+                    android:textColorHint="@color/colorGrey"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginStart="10dp"
+                    android:maxLength="200"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="0 / 200"
+                    android:id="@+id/stringSize"
+                    android:textColor="@color/colorGrey"
+                    android:layout_margin="5dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorWhite"
+            android:text="MODIFY"
+            android:id="@+id/modify"
+            android:layout_below="@id/relLayout3"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/relLayout1"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/bg_chat_bubble_left">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hello"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="11dp"
+            android:layout_marginEnd="11dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textSize="16sp"
+            android:paddingBottom="5dp"
+            android:paddingTop="2dp"
+            android:fontFamily="@font/roboto_regular"
+            android:id="@+id/text_messageL"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:text="DAYs"
+        android:textColor="@color/colorGrey"
+        android:layout_marginStart="5dp"
+        android:textSize="10sp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/timeL"/>
+
+</RelativeLayout>

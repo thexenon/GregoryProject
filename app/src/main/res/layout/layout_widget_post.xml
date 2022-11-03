@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/colorBackground"
+    android:layout_gravity="center_horizontal"
+    >
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_heart_empty"
+        android:id="@+id/heart"/>
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_heart_red"
+        android:id="@+id/heart_red"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:layout_toEndOf="@id/heart"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/roboto_regular"
+        android:id="@+id/tvLike"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Likes"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp"
+        android:layout_marginStart="4dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"/>
+
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/ic_eye"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="30dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="12sp"
+        android:layout_toEndOf="@id/heart"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="4dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"
+        android:id="@+id/tvSee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sees"
+        android:textSize="12sp"
+        android:textColor="@color/colorWhite"
+        android:layout_marginStart="4dp"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/roboto_regular"/>
+
+
+
+
+
+
+
+</LinearLayout>

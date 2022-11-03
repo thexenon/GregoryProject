@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.application.moment" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+
+    <application
+        android:requestLegacyExternalStorage="true"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme">
+
+        <service
+            android:name=".NotificationsUtils.MyFireBaseMessagingService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".NotificationsUtils.MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7181485920872488~5704751737"/>
+        <activity android:name=".Home.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Notifications.NotificationsActivity"/>
+        <activity android:name=".Popular.PopularActivity"/>
+        <activity android:name=".Profile.ProfileActivity"/>
+        <activity android:name=".VideoGallery.VideoGalleryActivity"/>
+        <activity android:name=".Login.LoginActivity"/>
+        <activity android:name=".Login.RegisterActivity"/>
+        <activity android:name=".Login.WelcomeActivity"/>
+        <activity android:name=".Settings.SettingsActivity"/>
+        <activity android:name=".Settings.PhotoActivity"/>
+        <activity android:name=".VideoGallery.PreviewActivity"/>
+        <activity android:name=".Search.SearchActivity"/>
+        <activity android:name=".Search.ViewProfileActivity"/>
+        <activity android:name=".Messages.ChatActivity"/>
+        <activity android:name=".Profile.VideoActivity"/>
+        <activity android:name=".Settings.EditVideoActivity"/>
+        <activity android:name=".Login.ResetPasswordActivity"/>
+        <activity android:name=".Reports.ReportActivity"/>
+    </application>
+
+</manifest>

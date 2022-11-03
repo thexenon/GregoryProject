@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/relLayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Settings"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            android:fontFamily="@font/nunito_regular"/>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:rotation="90"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:id="@+id/back_arrow"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/relLayout1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/relLayout2"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/nunito_regular"
+                android:id="@+id/username"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/username"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginEnd="1dp"
+                android:fontFamily="@font/nunito_regular"
+                android:id="@+id/at"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/relLayout3"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/nunito_regular"
+                android:id="@+id/display_name"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/nunito_regular"
+                android:id="@+id/email"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="(Not available now)"
+                android:textColor="@color/colorWhite"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/nunito_regular"
+                android:id="@+id/change_password"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/relLayout6"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile photo"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:textSize="18sp"
+                android:layout_marginEnd="25dp"
+                android:fontFamily="@font/nunito_regular"
+                android:id="@+id/change_profile_photo"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/relLayout7"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Terms and Conditions"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/relLayout8"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/relLayout9"
+            android:clickable="false"
+            android:background="@drawable/bg_list_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Support"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/sign_out"
+            android:focusable="true"
+            android:clickable="false"
+            android:background="@drawable/bg_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign out"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/reports"
+            android:focusable="true"
+            android:clickable="false"
+            android:visibility="gone"
+            android:background="@drawable/bg_active">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reports"
+                android:id="@+id/tv_report"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorMoment"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="18sp"
+                android:layout_marginStart="25dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/remove_account"
+            android:layout_marginTop="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove my account ?"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorGrey"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="14sp"
+                android:layout_marginStart="25dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+    </FrameLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/toolbar">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_arrow"
+            android:layout_centerVertical="true"
+            android:rotation="90"
+            android:layout_marginStart="15dp"
+            android:id="@+id/back_arrow"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREVIEW"
+            android:textColor="@color/colorWhite"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="18sp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav"
+        android:id="@+id/videoView" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Title:"
+            android:id="@+id/tit"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/tit"
+            android:background="@drawable/rounded_press_transparent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/title_video"
+                android:hint="Add a title"
+                android:textColorHint="@color/colorGrey"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:maxLength="40"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="0 / 40"
+                android:id="@+id/stringTitleSize"
+                android:textColor="@color/colorGrey"
+                android:layout_margin="7dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Description:"
+            android:id="@+id/desc"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:layout_below="@id/desc"
+            android:background="@drawable/rounded_press_transparent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:id="@+id/description"
+                android:hint="Describe your video"
+                android:textColorHint="@color/colorGrey"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="10dp"
+                android:maxLength="200"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="0 / 200"
+                android:id="@+id/stringSize"
+                android:textColor="@color/colorGrey"
+                android:layout_margin="7dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/relCategory"
+        android:layout_above="@id/btn_upload"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_regular"
+            android:text="Select your video category:"
+            android:layout_marginStart="10dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/spinner"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/rounded_press_transparent"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:popupBackground="@drawable/rounded_press"
+            android:tooltipText="Category"/>
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:background="@drawable/rounded_button"
+        android:text="Upload"
+        android:fontFamily="@font/nunito_bold"
+        android:textColor="@color/colorWhite"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:id="@+id/btn_upload"/>
+
+    <ProgressBar
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:theme="@style/ProgressBarStyle"
+        android:layout_above="@id/btn_upload"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/progress_bar"
+        android:visibility="gone"/>
+
+
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomNav"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/layout_bottom_navigation"/>
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Would you delete your account ?"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="18sp"
+        android:id="@+id/text"
+        android:layout_marginTop="50dp"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/light_rounded_button"
+        android:text="no"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text"
+        android:layout_marginTop="100dp"
+        android:id="@+id/no"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/lightwhite_rounded_button"
+        android:text="yes"
+        android:textColor="@color/colorMoment"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/no"
+        android:layout_marginTop="150dp"
+        android:id="@+id/yes"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We certified to delete all your data."
+        android:layout_below="@id/yes"
+        android:id="@+id/text2"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include all your messages."
+        android:layout_below="@id/text2"
+        android:id="@+id/text3"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Include all your videos."
+        android:layout_below="@id/text3"
+        android:id="@+id/text4"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_regular"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for sharing a moment with us."
+        android:layout_below="@id/text4"
+        android:id="@+id/text5"
+        android:textColor="@color/colorMoment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="15sp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="If you have any problems write us to our support."
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginBottom="5dp"/>
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_arrow"
+        android:rotation="90"
+        android:layout_margin="20dp"
+        android:id="@+id/back"/>
+
+</RelativeLayout>

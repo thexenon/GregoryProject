@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">GoLyve</string>
+
+    <!-- Fragment name -->
+
+    <string name="message_fragment">Messages</string>
+    <string name="camera_fragment">Camera</string>
+
+    <!-- Firebase database -->
+
+    <string name="dbname_videos">videos</string>
+    <string name="dbname_categories">categories</string>
+    <string name="dbname_chat">chat</string>
+    <string name="dbname_users">users</string>
+    <string name="dbname_tokens">tokens</string>
+    <string name="dbname_notifications">notifications</string>
+    <string name="dbname_message_order">message_order</string>
+    <string name="dbname_certified">Certified</string>
+    <string name="dbname_ban">Ban</string>
+    <string name="dbname_admin">Admin</string>
+    <string name="token">token</string>
+    <string name="user_id">user_id</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="first_name">first_name</string>
+    <string name="last_name">last_name</string>
+    <string name="email">email</string>
+    <string name="display_name">display_name</string>
+    <string name="profile_photo">profile_photo</string>
+    <string name="description">description</string>
+    <string name="videos">videos</string>
+    <string name="followers">followers</string>
+    <string name="following">following</string>
+    <string name="likes">likes</string>
+    <string name="sees">sees</string>
+    <string name="video_path">video_path</string>
+    <string name="video_id">video_id</string>
+    <string name="date_created">date_created</string>
+    <string name="category">category</string>
+    <string name="video_thumbnail">video_thumbnail</string>
+    <string name="title">title</string>
+    <string name="dbname_report">report</string>
+    <string name="ticket">ticket</string>
+
+
+    <string name="field_sender">Sender</string>
+    <string name="field_receiver">Receiver</string>
+    <string name="field_message">Message</string>
+    <string name="seen">Seen</string>
+
+
+    <string name="calling_activity">calling_activity</string>
+    <string name="video_file">video_file</string>
+    <string name="video_uri">video_uri</string>
+    <string name="video_duration">duration</string>
+
+
+    <!-- Welcome Activity -->
+
+    <string name="broadcast_your">Broadcast \nyour</string>
+    <string name="sixty_sec">60s</string>
+    <string name="lets_go">Let\'s go !</string>
+    <!-- Chat -->
+    <string name="write_something">Write something…</string>
+    <string name="delete_this_message">Delete this message ?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+</resources>

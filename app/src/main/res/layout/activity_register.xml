@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrow"
+                android:rotation="90"
+                android:layout_centerVertical="true"
+                android:id="@+id/back_arrow"
+                android:layout_marginLeft="15dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textColor="@color/colorWhite"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/nunito_bold"
+                android:textSize="22sp"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/rounded_line">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:background="@null"
+                android:layout_marginEnd="20dp"
+                android:hint="Username"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/username"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_line">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:hint="Email"
+                android:background="@null"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorWhite"
+                android:inputType="textEmailAddress"
+                android:id="@+id/email"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_line">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorLightGrey"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:hintTextColor="@color/colorGrey"
+                android:background="@drawable/rounded_line">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@null"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhite"
+                    android:inputType="textPassword"
+                    android:id="@+id/password"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_line">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorLightGrey"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:hintTextColor="@color/colorGrey"
+                android:background="@drawable/rounded_line">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:hint="Confirm password"
+                    android:textColorHint="@color/colorGrey"
+                    android:textColor="@color/colorWhite"
+                    android:inputType="textPassword"
+                    android:background="@null"
+                    android:id="@+id/confirm_password"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/check_empty"
+                android:src="@drawable/checkbox_empty"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:id="@+id/check"
+                android:src="@drawable/ic_check"
+                android:visibility="gone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/accept"
+                android:text="I accept the terms and conditions."
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/roboto_light"/>
+        </LinearLayout>
+        
+        
+        
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@drawable/rounded_button"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Sign Up"
+            android:textSize="16sp"
+            android:id="@+id/sign_up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_bold"/>
+
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:theme="@style/ProgressBarStyle"
+            android:layout_gravity="center"
+            android:id="@+id/progress_bar"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

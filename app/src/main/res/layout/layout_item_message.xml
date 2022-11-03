@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_list_thin_active"
+    android:clickable="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/profile_photo"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Display"
+            android:id="@+id/display_name"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_regular"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/profile_photo"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="15dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toEndOf="@id/display_name"
+            android:src="@drawable/ic_certified"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/certified"
+            android:visibility="gone"/>
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/round_seen"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/not_seen"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/display_name"
+            android:layout_toRightOf="@id/profile_photo"
+            android:layout_marginStart="15dp"
+            android:textSize="12sp"
+            android:textColor="@color/colorMoment"
+            android:fontFamily="@font/roboto_bold"
+            android:text="at"
+            android:id="@+id/at"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/at"
+            android:layout_below="@id/display_name"
+            android:fontFamily="@font/roboto_bold"
+            android:textColor="@color/colorMoment"
+            android:text="username"
+            android:textSize="12sp"
+            android:layout_marginStart="1dp"
+            android:id="@+id/username"/>
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/username"
+            android:layout_toRightOf="@id/profile_photo"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/colorMoment"
+            android:text="Last message"
+            android:textSize="14sp"
+            android:layout_marginStart="15dp"
+            android:id="@+id/last_message"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/colorGrey"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:id="@+id/timeStamp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</RelativeLayout>

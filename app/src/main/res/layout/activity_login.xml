@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/background_login">
+    
+    <RelativeLayout
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/bg_active_rounded"
+        android:layout_alignParentEnd="true"
+        android:clickable="false"
+        android:layout_margin="20dp"
+        android:id="@+id/help"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_help"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linear"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/relLayout1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_brand_style1"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="40dp"
+            android:id="@+id/relLayout2"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_line">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="email"
+                android:background="@null"
+                android:id="@+id/email"
+                android:fontFamily="@font/roboto_light"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColorHint="@color/colorGrey"
+                android:textColor="@color/colorWhite"
+                android:inputType="textEmailAddress"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorLightGrey"
+                app:hintAnimationEnabled="false"
+                app:hintEnabled="false"
+                app:hintTextColor="@color/colorGrey"
+                android:background="@drawable/rounded_line">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="password"
+                    android:background="@null"
+                    android:fontFamily="@font/roboto_light"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColorHint="@color/colorGrey"
+                    android:id="@+id/password"
+                    android:textColor="@color/colorWhite"
+                    android:inputType="textPassword"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_light"
+                android:text="Forgot your password ?"
+                android:id="@+id/text_forgot"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/colorGrey"/>
+
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="20dp">
+            
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:background="@drawable/rounded_button"
+                android:text="Sign In"
+                android:id="@+id/btn_login"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:fontFamily="@font/nunito_bold"/>
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:id="@+id/progress_bar"
+            android:layout_marginTop="5dp"
+            android:theme="@style/ProgressBarStyle"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?"
+                android:fontFamily="@font/nunito_regular"
+                android:textSize="15sp"
+                android:textColor="@color/colorWhite"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create new one !"
+                android:id="@+id/text_register"
+                android:textSize="15sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/nunito_regular"
+                android:textColor="@color/colorMoment"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

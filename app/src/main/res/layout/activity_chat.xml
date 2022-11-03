@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/background_list_settings"
+        android:id="@+id/relLayout1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/profile_photo"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/nunito_regular"
+                    android:text=""
+                    android:textSize="16sp"
+                    android:id="@+id/display_name"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/display_name"
+                    android:text=""
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="14sp"
+                    android:id="@+id/at"
+                    android:textColor="@color/colorMoment"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_toEndOf="@id/display_name"
+                    android:src="@drawable/ic_certified"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="3dp"
+                    android:id="@+id/certified"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/display_name"
+                    android:layout_toEndOf="@id/at"
+                    android:text=""
+                    android:fontFamily="@font/nunito_regular"
+                    android:textSize="14sp"
+                    android:id="@+id/username"
+                    android:textColor="@color/colorMoment"/>
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:id="@+id/back_arrow"
+            android:background="@drawable/bg_active_rounded"
+            android:clickable="false">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_arrow"
+                android:layout_centerInParent="true"
+                tools:ignore="ContentDescription" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relLayout1"
+        android:layout_above="@id/relLayout2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/chat_recycler"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="55dp"
+        android:id="@+id/relLayout2"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/background_line_top">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/rounded_line"
+            android:layout_centerVertical="true">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:hint="@string/write_something"
+                android:textColorHint="@color/colorGrey"
+                android:background="@null"
+                android:textColor="@color/colorWhite"
+                android:id="@+id/editText_message"
+                android:fontFamily="@font/roboto_regular"
+                android:paddingBottom="5dp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_send"
+            android:id="@+id/send_message"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/colorBottomNavigation"
+        android:id="@+id/relative_delete"
+        android:visibility="gone"
+        android:layout_below="@id/relLayout1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/delete_this_message"
+            android:id="@+id/textDelete"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/colorWhite"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:id="@+id/yes"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="80dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorMoment"
+            tools:ignore="RelativeOverlap" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:id="@+id/no"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

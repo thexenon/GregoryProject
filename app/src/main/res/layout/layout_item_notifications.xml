@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/relLayout1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:background="@drawable/bg_list_thin_active"
+        android:clickable="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@id/relLayout1">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/profile_photo"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/profile_photo"
+                android:textColor="@color/colorMoment"
+                android:layout_marginStart="10dp"
+                android:text="at"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="16sp"
+                android:id="@+id/at"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/at"
+                android:textColor="@color/colorMoment"
+                android:text="username"
+                android:fontFamily="@font/roboto_regular"
+                android:textSize="16sp"
+                android:id="@+id/username"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="1dp"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/relLayout1"
+            android:text=""
+            android:fontFamily="@font/roboto_regular"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="15dp"
+            android:id="@+id/action_text"
+            android:layout_marginStart="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/colorGrey"
+            android:fontFamily="@font/roboto_light"
+            android:layout_marginBottom="2dp"
+            android:textSize="12sp"
+            android:id="@+id/timeStamp"
+            android:layout_below="@id/action_text"
+            android:layout_marginTop="2dp"
+            android:layout_margin="2dp"/>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/preview_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_swipe"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="27dp"
+        android:id="@+id/ic_swipe"/>
+
+    <RelativeLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/ic_swipe"
+        android:id="@+id/flash"
+        android:layout_alignParentEnd="true">
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_flash_off"
+            android:id="@+id/flash_off"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_flash_on"
+            android:id="@+id/flashOn"
+            />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_flash_auto"
+            android:id="@+id/flashAuto"
+            />
+
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/ic_timer"
+        android:layout_below="@id/flash"
+        android:id="@+id/timer_on"
+        android:visibility="gone"
+        android:layout_marginTop="25dp"/>
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:src="@drawable/ic_timer_off"
+        android:id="@+id/timer_off"
+        android:layout_below="@id/flash"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text=""
+        android:id="@+id/timer_count"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/nunito_bold"
+        android:visibility="gone"
+        android:textSize="65sp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+        <ImageView
+            android:layout_width="64.5dp"
+            android:layout_height="64.5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/record"
+            android:src="@drawable/ic_record"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:fabSize="normal"
+            android:backgroundTint="@color/colorMoment"
+            app:borderWidth="0dp"
+            android:id="@+id/fab"
+            android:layout_centerInParent="true"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:layout_margin="25dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner"
+            android:popupBackground="@drawable/bg_spinner"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:background="@drawable/bg_spinner"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/timer"/>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

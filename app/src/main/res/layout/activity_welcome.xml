@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:id="@+id/videoView"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/app_name"
+        android:id="@+id/logo"
+        android:src="@drawable/ic_logo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/broadcast_your"
+        android:layout_marginStart="40dp"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_below="@id/logo"
+        android:id="@+id/firstp"
+        android:layout_marginTop="50dp"
+        android:textSize="40sp"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sixty_sec"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginStart="40dp"
+        android:layout_below="@id/firstp"
+        android:textSize="40sp"
+        android:textColor="@color/colorMoment"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:text="@string/lets_go"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:fontFamily="@font/nunito_regular"
+        android:textSize="24sp"
+        android:id="@+id/btnWelcome"/>
+
+
+</RelativeLayout>

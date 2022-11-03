@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorBackground">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/profile_photo"
+            android:layout_marginStart="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_photo"
+            android:textColor="@color/colorMoment"
+            android:text="at"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14sp"
+            android:id="@+id/at"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/at"
+            android:textColor="@color/colorMoment"
+            android:text="username"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="14sp"
+            android:id="@+id/username"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/at"
+            android:layout_toRightOf="@id/profile_photo"
+            android:text="Display"
+            android:fontFamily="@font/roboto_bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/display_name"
+            android:layout_marginStart="10dp"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_toEndOf="@id/display_name"
+            android:src="@drawable/ic_certified"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/at"
+            android:layout_marginStart="5dp"
+            android:id="@+id/certified"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@drawable/light_rounded_button"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="follow"
+            android:id="@+id/follow"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorWhite"
+            android:visibility="gone"
+            android:textSize="12sp"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:background="@drawable/lightwhite_rounded_button"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="unfollow"
+            android:id="@+id/unFollow"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/colorMoment"
+            android:visibility="gone"
+            android:textSize="12sp"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
